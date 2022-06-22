@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+</head>
+<body>
+    <h2>1- Calculator</h2>
+    Write a program to make a simple calculator using switch statement that takes operator and two numbers from user and print the result after operation.
+
+Note: You have to complete Calculator. No need to take any input
+<pre>Ans-  const Calculator = (A, B, C) =&gt; 
+    {
+        switch(A){
+          case "+":
+            return B+C;
+            
+            case "-":
+              return B-C;
+              
+              case "*":
+                return B*C;
+                
+                case "/":
+                  return B/C;
+                 
+                  
+        }
+        
+    };</pre><br>
+    <h2>2- Check whether the condition is fulfilled or not?</h2>
+    Write a program that takes a number and prints whether the number is divisible by 
+6
+ and 
+9
+ or not.
+
+Note: You have to complete Check_divisibility. No need to take any input
+<pre>Ans-  const Check_divisibility = (N) =&gt; {
+    return((N%6===0)&amp;&amp;(N%9===0))?
+    "Divisible by both":
+    "Not Divisible by both"
+    
+};</pre><br>
+<h2>3- Eligible Voter</h2>
+You are given an integer 
+A
+, denoting the age of a person, and your task is to determine whether he/she is eligible to vote or not.
+
+Note: You have to complete isEligible function. No need to take any input
+<pre>Ans-  const isEligible = (a) =&gt; {
+    let result = a &gt; 18 ? ("Eligible for Voting") : ("Not Eligible for Voting")
+    return result;
+ };</pre><br>
+ <h2>4- Find Relation</h2>
+ PrepBuddy wants you to get familiar with various Relational operators. He provides you with two integer values 
+X
+ and 
+Y
+ and asks you to find the relation between them.
+The relationships between integers 
+X
+ and 
+Y
+ are as follows: <br>
+
+If 
+X
+&lt;
+Y
+, it means that 
+X
+ is smaller than 
+Y
+. <br>
+If 
+X
+&gt;
+Y
+, it means that 
+X
+ is greater than 
+Y
+. <br>
+If 
+X
+=
+Y
+, it means that 
+X
+ is equal to 
+Y
+. 
+Note: You have to complete findRelationship function. No need to take any input.
+<pre>Ans-  const findRelation = (x,y) =&gt; {
+    if(x<y){ return="" (x="" +="" "="" is="" smaller="" than="" y);="" }="" else="" if(x="">y){
+      return (x + " is greater than " + y);
+    }
+      else{
+      return (x + " is equal to " + y);
+    }
+};</y){></pre> <br>
+<h2>5- Find Grades</h2>
+Your school has the following grading system based upon the marks(M) obtained by a student:
+<br>
+If 
+M
+≤
+10
+, the grade will be 
+E
+. <br>
+If 
+11
+≥
+M
+≤
+20
+, the grade will be 
+D
+. <br>
+If 
+21
+≥
+M
+≤
+30
+, the grade will be 
+C
+. <br>
+If 
+31
+≥
+M
+≤
+40
+, the grade will be 
+B
+. <br>
+If 
+41
+≥
+M
+≤
+50
+, the grade will be 
+A
+. <br>
+Your friend will enter his marks out of 
+50
+, and your task is to print his grades using a switch statement.
+
+Note: You have to complete findGrades function. No need to take any input.
+<pre>Ans-  const findGrades = (a) =&gt; {
+    switch(true){
+      case a&lt;=10:
+        return "E";
+        case a&gt;=11 &amp;&amp; a&lt;=20:
+          return "D";
+          case a&gt;=21 &amp;&amp; a&lt;=30:
+            return "C";
+            case a&gt;=31 &amp;&amp; a&lt;=40:
+              return "B";
+              case a&gt;=41 &amp;&amp; a&lt;=50:
+                return "A";
+                default:
+                return "Invalid Marks";
+      
+    }
+};</pre><br>
+<h2>6- Get Value</h2>
+You are provided with a table containing some characters and their corresponding values. Your task will be to find the value from the table corresponding to an input character and return it.
+<pre>    | P or p 	- PrepBytes      	|
+    | Z or z 	- Zenith         	|
+    | E or e 	- Expert Coder   	|
+    | D or d 	- Data Structure 	|</pre>
+    Note: You have to complete getValue function. No need to take any input.
+    <pre>Ans-  const getValue = (a) =&gt; {
+        switch(true){
+          case (a =="P" || a =="p"):
+            return "PrepBytes";
+            
+            case (a =="Z" || a =="z"):
+              return "Zenith";
+              
+              case (a =="E" || a =="e"):
+              return "Expert Coder";
+              
+              case (a =="D" || a =="d"):
+                return "Data Structure";
+              
+        }
+    };</pre><br>
+    <h2>7- Find the maximum out of three numbers.</h2>
+    Take three numbers and print the largest number among them if all of three are same print  
+−
+1
+.
+
+Note: You have to complete Max_out_of_three. No need to take any input.
+<pre>Ans-  const Max_out_of_three = (A,B,C) =&gt; {
+    if (A&gt;B&amp;&amp;A&gt;C){
+      return A;
+    }
+    else if(B&gt;A&amp;&amp;B&gt;C){
+      return B;
+    }
+    else if(C&gt;A&amp;&amp;C&gt;B){
+      return C;
+    }
+    else{
+      return "-1";
+    }
+
+};</pre><br>
+<h2>8- Second Smallest</h2>
+You are given 
+3
+ distinct integers 
+X
+,
+Y
+,
+ and 
+Z
+,
+ and your task is to find and return the second smallest integer among the three provided integers.
+
+Note: You have to complete findSndSmallest function. No need to take any input.
+<pre>Ans-  const findSndSmallest = (x,y,z) =&gt; {
+  
+    if((x&gt;y &amp;&amp; x<z) |="" (x<y="" &&="" x="">z)){
+      return x;
+    }
+    else if((y&gt;x &amp;&amp; y<z) |="" (y<x="" &&="" y="">z)) {
+      return y;
+    }
+    else {
+      return z;
+    }
+    
+};</z)></z)></pre><br>
+<h2>9- Check whether the triangle is Acute or Obtuse</h2>
+Write a program takes takes three angles and checks whether the triangle is acute or obtuse.
+
+Note: You have to complete Triangle_Check. No need to take any input
+<pre>Ans-  const Triangle_Check = (A,B,C) =&gt; {
+    
+    if (A&lt;90 &amp;&amp; B&lt;90 &amp;&amp; C&lt;90){
+      return "acute";
+    }
+    else{
+      return "obtuse"
+    }
+      
+  }; </pre>
+
+</body>
+</html>
