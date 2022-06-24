@@ -7,255 +7,206 @@
     <title>Arrays</title>
 </head>
 <body>
-    <h2>1- Calculator</h2>
-    Write a program to make a simple calculator using switch statement that takes operator and two numbers from user and print the result after operation.
-
-Note: You have to complete Calculator. No need to take any input
-<pre>Ans-  const Calculator = (A, B, C) =&gt; 
+    <h2>1- Find the Product.</h2>
+    Write a program that takes an array as input from the user and find out the
+    product of the elements. Note: You have to complete Find_Prod. No need to
+    take any input.
+    <pre>Ans-  const Find_Prod = (array, N) =&gt; 
     {
-        switch(A){
-          case "+":
-            return B+C;
-            
-            case "-":
-              return B-C;
-              
-              case "*":
-                return B*C;
-                
-                case "/":
-                  return B/C;
-                 
-                  
-        }
-        
-    };</pre><br>
-    <h2>2- Check whether the condition is fulfilled or not?</h2>
-    Write a program that takes a number and prints whether the number is divisible by 
-6
- and 
-9
- or not.
-
-Note: You have to complete Check_divisibility. No need to take any input
-<pre>Ans-  const Check_divisibility = (N) =&gt; {
-    return((N%6===0)&amp;&amp;(N%9===0))?
-    "Divisible by both":
-    "Not Divisible by both"
+     
+         let product = 1;
+         for(let element of array){
+           product*=element
+         }
+         return product;
     
-};</pre><br>
-<h2>3- Eligible Voter</h2>
-You are given an integer 
-A
-, denoting the age of a person, and your task is to determine whether he/she is eligible to vote or not.
-
-Note: You have to complete isEligible function. No need to take any input
-<pre>Ans-  const isEligible = (a) =&gt; {
-    let result = a &gt; 18 ? ("Eligible for Voting") : ("Not Eligible for Voting")
-    return result;
- };</pre><br>
- <h2>4- Find Relation</h2>
- PrepBuddy wants you to get familiar with various Relational operators. He provides you with two integer values 
-X
- and 
-Y
- and asks you to find the relation between them.
-The relationships between integers 
-X
- and 
-Y
- are as follows: <br>
-
-If 
-X
-&lt;
-Y
-, it means that 
-X
- is smaller than 
-Y
-. <br>
-If 
-X
-&gt;
-Y
-, it means that 
-X
- is greater than 
-Y
-. <br>
-If 
-X
-=
-Y
-, it means that 
-X
- is equal to 
-Y
-. 
-Note: You have to complete findRelationship function. No need to take any input.
-<pre>Ans-  const findRelation = (x,y) =&gt; {
-    if(x<y){ return="" (x="" +="" "="" is="" smaller="" than="" y);="" }="" else="" if(x="">y){
-      return (x + " is greater than " + y);
-    }
+    };</pre>
+    <br>
+    <h2>2- Find the Sum.</h2>
+    Write a program which takes an array as input from the user and find out the
+    sum of the array elements. Note: You have to complete Find_Sum. No need to
+    take any input.
+    <pre>Ans-  const Find_Sum = (array, N) =&gt; 
+    {
+      let product = 0;
+      for(let element of array){
+        product+=element
+      }
+      return product;
+    
+    };</pre>
+    <br>
+    <h2>3- Count Occurrences</h2>
+    You are given an array A containing N integer elements and an integer K ,
+    and your task is to return the count of occurrences of K in array A . Note:
+    You have to complete findCount function. No need to take any input.
+    <pre>Ans-  const findCount = (N, K, Arr) =&gt; 
+    {
+        let count=0;
+        for(let i in Arr){
+          if(Arr[i]===K){
+            count += 1;
+          }
+        }return count;
+    };</pre>
+    <br>
+    <h2>4- Even Odd</h2>
+    You are given an array A containing N integer elements, and your task is to
+    return an array B ( having a size equal to 2 ) , where B [ 0 ] contains the
+    sum of all even elements of array A and B [ 1 ] has the sum of all odd
+    elements of the array A . Note: You have to complete findEvenOdd function.
+    No need to take any input.
+    <pre>Ans-  const findEvenOdd = (N, Arr) =&gt; 
+    {
+        let oddCount = 0;
+        evenCount = 0;
+        let arrBB = [];
+        for(let p of Arr){
+          if(p%2===0){
+            evenCount+=p;
+          }
+          else{
+            oddCount+=p;
+          }
+        }
+        arrBB[0] = evenCount;
+        arrBB[1] = oddCount;
+        return arrBB
+    };</pre>
+    <br>
+    <h2>5- Find whether the number is present or not</h2>
+    Write a program which takes an array as input from the user and a number.
+    Check whether the number is present or not. Note: You have to complete
+    Find_Num. No need to take any input.
+    <pre>Ans-  const Find_Num = (array,N,M) =&gt; 
+    {
+      let count=0;
+      for(let p of array){
+        if(p===M){
+          count+=1
+        }
+      }
+      if(count&gt;0){
+        return "YES";
+      }
       else{
-      return (x + " is equal to " + y);
-    }
-};</y){></pre> <br>
-<h2>5- Find Grades</h2>
-Your school has the following grading system based upon the marks(M) obtained by a student:
-<br>
-If 
-M
-≤
-10
-, the grade will be 
-E
-. <br>
-If 
-11
-≥
-M
-≤
-20
-, the grade will be 
-D
-. <br>
-If 
-21
-≥
-M
-≤
-30
-, the grade will be 
-C
-. <br>
-If 
-31
-≥
-M
-≤
-40
-, the grade will be 
-B
-. <br>
-If 
-41
-≥
-M
-≤
-50
-, the grade will be 
-A
-. <br>
-Your friend will enter his marks out of 
-50
-, and your task is to print his grades using a switch statement.
-
-Note: You have to complete findGrades function. No need to take any input.
-<pre>Ans-  const findGrades = (a) =&gt; {
-    switch(true){
-      case a&lt;=10:
-        return "E";
-        case a&gt;=11 &amp;&amp; a&lt;=20:
-          return "D";
-          case a&gt;=21 &amp;&amp; a&lt;=30:
-            return "C";
-            case a&gt;=31 &amp;&amp; a&lt;=40:
-              return "B";
-              case a&gt;=41 &amp;&amp; a&lt;=50:
-                return "A";
-                default:
-                return "Invalid Marks";
-      
-    }
-};</pre><br>
-<h2>6- Get Value</h2>
-You are provided with a table containing some characters and their corresponding values. Your task will be to find the value from the table corresponding to an input character and return it.
-<pre>    | P or p 	- PrepBytes      	|
-    | Z or z 	- Zenith         	|
-    | E or e 	- Expert Coder   	|
-    | D or d 	- Data Structure 	|</pre>
-    Note: You have to complete getValue function. No need to take any input.
-    <pre>Ans-  const getValue = (a) =&gt; {
-        switch(true){
-          case (a =="P" || a =="p"):
-            return "PrepBytes";
-            
-            case (a =="Z" || a =="z"):
-              return "Zenith";
-              
-              case (a =="E" || a =="e"):
-              return "Expert Coder";
-              
-              case (a =="D" || a =="d"):
-                return "Data Structure";
-              
+        return "NO"
+      }
+    };</pre>
+    <br>
+    <h2>6- Higher Age</h2>
+    You are given an array A containing the age of persons in your locality, and
+    your task is to find and return an array containing the age of persons that
+    are over 18 ( 18 included ) . Note: Also, in the output array, the age
+    should be in the same order as in the input array. You have to complete
+    highAge function. No need to take any input.
+    <pre>Ans-  const highAge = (N, Arr) =&gt; 
+    {
+        let p=[];
+        for(let b of Arr){
+          if(b&gt;=18){
+            p.push(b)
+          }
         }
-    };</pre><br>
-    <h2>7- Find the maximum out of three numbers.</h2>
-    Take three numbers and print the largest number among them if all of three are same print  
-−
-1
-.
+        return p;
+    };</pre>
+    <br>
+    <h2>7- Increment the Array Elements</h2>
+    You are provided an array of integers and you have to increment all array
+    elements by 1 and then print whole array. You have to complete Inc_Arr. No
+    need to take any input.
+    <pre>Ans-  const Inc_Arr = (array,N) =&gt; 
+    {
+      let arr1 =""
+      for(let p of array){
+        arr1+=(p+1).toString()+" "
+      }
+      console.log(arr1);
+    
+    };</pre>
+    <br>
 
-Note: You have to complete Max_out_of_three. No need to take any input.
-<pre>Ans-  const Max_out_of_three = (A,B,C) =&gt; {
-    if (A&gt;B&amp;&amp;A&gt;C){
-      return A;
+    <h2>8- Pass or Fail</h2>
+    You are given an array A containing the maths marks of students in your
+    class, and your task is to determine if all the students pass in your class
+    or not. A student is declared pass if his maths marks are greater than or
+    equal to 32 . If all the students pass in your class, return "YES" (without
+    quotes); otherwise, return "NO" (without quotes). Note: You have to complete
+    isAllPass function. No need to take any input.
+    <pre>Ans-  const isAllPass = (N, Arr) =&gt; 
+    {
+        return Arr.every((p)=&gt;p&gt;=32)?"YES":"NO";
+    };</pre>
+    <br>
+    <h2>9- Unique Color Shirt</h2>
+    Prepbuddy is very tasteful of clothes. He has N numbers of shirts hanging in
+    the hanger in his wardrobe. Prepbuddy likes to wear different colored
+    clothes. So, whenever he see there are two or more shirts with the same
+    color, he removes all the shirt of that color from his wardrobe. Now, he
+    wants to know how many M unique color shirts are left in the wardrobe.
+    Prepbuddy wants you to find M . Note: As there are many shades of a color so
+    consider integers as a color name. i.e, color of shirt is 0,1,2, … , N.
+    <pre>Ans-  function Unique_Shirts (arr,N) {
+    let arr1=Array(10000).fill(0);
+    for(let p of arr){
+      arr1[p]+=1
     }
-    else if(B&gt;A&amp;&amp;B&gt;C){
-      return B;
+    let count=0;
+    for (let p of arr1){
+      if(p===1){
+        count+=1
+      }
     }
-    else if(C&gt;A&amp;&amp;C&gt;B){
-      return C;
-    }
-    else{
-      return "-1";
-    }
-
-};</pre><br>
-<h2>8- Second Smallest</h2>
-You are given 
-3
- distinct integers 
-X
-,
-Y
-,
- and 
-Z
-,
- and your task is to find and return the second smallest integer among the three provided integers.
-
-Note: You have to complete findSndSmallest function. No need to take any input.
-<pre>Ans-  const findSndSmallest = (x,y,z) =&gt; {
+    return count;
   
-    if((x&gt;y &amp;&amp; x<z) |="" (x<y="" &&="" x="">z)){
-      return x;
+   
+  }</pre>
+    <br>
+    <h2>10- Min and Max</h2>
+    Congratulations on making up to this question. Let us give you a fairly
+    simple array problem to solve. If you know how to iterate through the array,
+    you will easily be able to solve this. The problem statement is simple-
+    given N elements, find the minimum and maximum numbers among those elements.
+    <pre>Ans-   function arrayMin(arr) {
+    let min=arr[0];
+    for (let p of arr){
+      if(min&gt;p){
+        min=p;
+      }
     }
-    else if((y&gt;x &amp;&amp; y<z) |="" (y<x="" &&="" y="">z)) {
-      return y;
+    return min;
+  
+  }
+  
+  function arrayMax(arr) {
+   let max=arr[0]
+   for(let p of arr){
+     if(max<p){ max="p;" }="" return="" max;="" }<="" pre="">
+    <br>
+    <h2>11- Birthday Game</h2>
+    Yatharth and Anamika are playing a game. Anamika loves Yatharth very much
+    and she wants to share a chocolate bar with him in which each of the squares
+    consists of an integer represented by A [ i ] . She decides to share a
+    contiguous segment of the chocolate bar selected such that the length of the
+    segment matches Yatharth's birth month M and the sum of the integers on the
+    squares is equal to his birthday D . You must determine how many ways she
+    can divide the chocolate.
+    <pre>Ans-  function Birthday_Game(arr,D ,M) {
+    let finalCount=0;
+    for(let p=0;p&lt;(arr.toString().length-M);p++){
+      let count=0;
+      for(let b=p;b&lt;(p+M);b++){
+        count+=arr[b];
+      }
+      if(count===D){
+        finalCount+=1
+      }
     }
-    else {
-      return z;
-    }
-    
-};</z)></z)></pre><br>
-<h2>9- Check whether the triangle is Acute or Obtuse</h2>
-Write a program takes takes three angles and checks whether the triangle is acute or obtuse.
+    return finalCount;
+   
+   }</pre>
+  
 
-Note: You have to complete Triangle_Check. No need to take any input
-<pre>Ans-  const Triangle_Check = (A,B,C) =&gt; {
-    
-    if (A&lt;90 &amp;&amp; B&lt;90 &amp;&amp; C&lt;90){
-      return "acute";
-    }
-    else{
-      return "obtuse"
-    }
-      
-  }; </pre>
-
+</p){></pre>
 </body>
 </html>
