@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Iteration Statements</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iteration Statements</title>
 
 </head>
+
 <body>
-    <h2>1- Find the number of digits</h2>
-    Take a number from the user and print the count of digits in that number.
-    Note: You have to complete Find_Digits. No need to take any input.
-    <pre>Ans-  const Find_Digits = (N) =&gt; 
+  <h2>1- Find the number of digits</h2>
+  Take a number from the user and print the count of digits in that number.
+  Note: You have to complete Find_Digits. No need to take any input.
+  <pre>Ans-  const Find_Digits = (N) =&gt; 
     {
          let count=0;
          while(N&gt;0){
@@ -20,22 +22,30 @@
          }
          return count;
     };</pre>
-    <br>
-    <h2>2- Find the Fives.</h2>
-    Among all the digits from 0−9, PrepBuddy likes number 5. He has a number and
-    wants you to find out the number of times 5 occurred in the given number.
-    Note: You have to complete Find_Five. No need to take any input.
-    <pre>Ans-  const Find_Five = (N) =&gt; 
-    {
-         n=N.toString()
-         let count=0;
-         for(let i=0;i<n.length;i++){ if(n[i]="==&quot;5&quot;){" count+="1;" }="" return="" count;="" };<="" pre="">
-    <br>
-    <h2>3- Find Sum</h2>
-    You are given an integer N , and your task is to find the sum of all the
-    even integers starting from 1 upto N ( N inclusive). Note: You have to
-    complete findSum function. No need to take any input.
-    <pre>Ans-  const findSum = (n) =&gt; {
+  <br>
+  <h2>2- Find the Fives.</h2>
+  Among all the digits from 0−9, PrepBuddy likes number 5. He has a number and
+  wants you to find out the number of times 5 occurred in the given number.
+  Note: You have to complete Find_Five. No need to take any input.
+  <pre>Ans-  const Find_Five = (N) =&gt;
+{
+  n=N.toString()
+  let count=0;
+  for(let i=0;i&gt;n.length;i++){
+    if(n[i]===&quot5&quot){
+      count+=1;
+    }
+  }
+  return count;
+};
+        
+  </pre>
+  <br>
+  <h2>3- Find Sum</h2>
+  You are given an integer N , and your task is to find the sum of all the
+  even integers starting from 1 upto N ( N inclusive). Note: You have to
+  complete findSum function. No need to take any input.
+  <pre>Ans-  const findSum = (n) =&gt; {
     let sum=0;
     for(let i=1;i&lt;=n;i++){
       if(i%2===0){
@@ -44,12 +54,12 @@
     }
     return sum;
 };</pre>
-    <br>
-    <h2>4- Find the sum of the digits of a given number.</h2>
-    Write a program that takes a number from the user and get the sum of the
-    digits present in the number. Note: You have to complete Number_Sum. No need
-    to take any input.
-    <pre>Ans-  const Number_Sum = (N) =&gt; 
+  <br>
+  <h2>4- Find the sum of the digits of a given number.</h2>
+  Write a program that takes a number from the user and get the sum of the
+  digits present in the number. Note: You have to complete Number_Sum. No need
+  to take any input.
+  <pre>Ans-  const Number_Sum = (N) =&gt; 
     {
         let sum=0;
         while(N&gt;0){
@@ -58,12 +68,12 @@
         }
         return sum
     };</pre>
-    <br>
-    <h2>5- Print the Odds.</h2>
-    Write a program which takes a number from user and print all odd numbers in
-    between 2 and N, but print 2 first. Note: You have to complete Print_Odd. No
-    need to take any input.
-    <pre>Ans-  const Print_Odd = (N) =&gt; 
+  <br>
+  <h2>5- Print the Odds.</h2>
+  Write a program which takes a number from user and print all odd numbers in
+  between 2 and N, but print 2 first. Note: You have to complete Print_Odd. No
+  need to take any input.
+  <pre>Ans-  const Print_Odd = (N) =&gt; 
     {
          if(N===2){
            console.log(2)
@@ -76,12 +86,12 @@
          }
          }
     };</pre>
-    <br>
-    <h2>6- Print the Pattern.</h2>
-    Write a program which ask user for no of lines and print a pattern using an
-    asterik . Note: You have to complete Print_pattern. No need to take any
-    input.
-    <pre>Ans-  const Print_pattern = (N) =&gt; 
+  <br>
+  <h2>6- Print the Pattern.</h2>
+  Write a program which ask user for no of lines and print a pattern using an
+  asterik . Note: You have to complete Print_pattern. No need to take any
+  input.
+  <pre>Ans-  const Print_pattern = (N) =&gt; 
     {
       let p=""
       for(let i = 1;i&lt;=N;i++){
@@ -93,12 +103,12 @@
       }
     
     };</pre>
-    <br>
-    <h2>7- Check whether a Number is a prime or not.</h2>
-    Write a program which takes a number from user and check whether number is
-    prime number or not a prime number. Note: You have to complete Prime_Check.
-    No need to take any input.
-    <pre>Ans-  const Prime_Check = (N) =&gt; 
+  <br>
+  <h2>7- Check whether a Number is a prime or not.</h2>
+  Write a program which takes a number from user and check whether number is
+  prime number or not a prime number. Note: You have to complete Prime_Check.
+  No need to take any input.
+  <pre>Ans-  const Prime_Check = (N) =&gt; 
     {
          if(N===1){
            return "NO"
@@ -117,18 +127,22 @@
     }
     console.log(p)
 };</pre>
-    <br>
-    <h2>9- Print the Table</h2>
-    Write a program which takes a number from user and print the table. Note:
-    You have to complete Print_Table. No need to take any input.
-    <pre>Ans-  const Print_Table = (N) =&gt; 
+  <br>
+  <h2>9- Print the Table</h2>
+  Write a program which takes a number from user and print the table. Note:
+  You have to complete Print_Table. No need to take any input.
+  <pre>Ans-  const Print_Table = (N) =&gt; 
     {
         for(let p = 1;p&lt;=10;p++){
           console.log(`${N} * ${p} = ${N*p}`)
         }
     };</pre>
-  
 
-</n;i++){></pre></n.length;i++){></pre>
+
+  </n;i++){>
+  </pre>
+  </n.length;i++){>
+  </pre>
 </body>
+
 </html>
