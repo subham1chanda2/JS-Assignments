@@ -61,7 +61,7 @@
   <pre>Ans-  const findEvenOdd = (N, Arr) =&gt; 
     {
         let oddCount = 0;
-        evenCount = 0;
+        let evenCount = 0;
         let arrBB = [];
         for(let p of Arr){
           if(p%2===0){
@@ -73,7 +73,7 @@
         }
         arrBB[0] = evenCount;
         arrBB[1] = oddCount;
-        return arrBB
+        return arrBB;
     };</pre>
   <br>
   <h2>5- Find whether the number is present or not</h2>
@@ -85,14 +85,14 @@
       let count=0;
       for(let p of array){
         if(p===M){
-          count+=1
+          count+=1;
         }
       }
       if(count&gt;0){
         return "YES";
       }
       else{
-        return "NO"
+        return "NO";
       }
     };</pre>
   <br>
@@ -107,7 +107,7 @@
         let p=[];
         for(let b of Arr){
           if(b&gt;=18){
-            p.push(b)
+            p.push(b);
           }
         }
         return p;
@@ -151,12 +151,12 @@
   <pre>Ans-  function Unique_Shirts (arr,N) {
     let arr1=Array(10000).fill(0);
     for(let p of arr){
-      arr1[p]+=1
+      arr1[p]+=1;
     }
     let count=0;
     for (let p of arr1){
       if(p===1){
-        count+=1
+        count+=1;
       }
     }
     return count;
