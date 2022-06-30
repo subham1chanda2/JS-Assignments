@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Strings</title>
 </head>
-
 <body>
   <h2>1- Count Characters</h2>
   You are given a string S , and your task is to return an array B ( having a
@@ -44,7 +42,12 @@
         let count=1;
         let str="";
         let res="";
-        for(let i=0;i<s.length;i++){ for(let="" j="i+1;j&lt;s.length;j++){" if(s[i]="=s[j]){" count++;="" }="" if(count="">1){
+        for(let i=0;i<s.length;i++){ 
+          for(let j=i+1; j&lt;s.length;j++){
+            if(s[i]==s[j]){
+              count++;
+            }
+            if(count="">1){
             str=s[i];
             res=res+" "+s[i]+count;
             s=s.replace(str," ");
@@ -53,7 +56,7 @@
           count=1;
         }
         return res.split(" ").sort().join("");
-    };</s.length;i++){></pre>
+    };</pre>
   <br>
   <h2>3- Count the Vowels</h2>
   You are given a string S containing both uppercase and lowercase letters.
@@ -63,7 +66,6 @@
     {
         const count = S.match(/[aeiou]/gi).length;
         return count;
-    
     };</pre>
   <br>
   <h2>4- Concatenate the Strings</h2>
@@ -73,15 +75,7 @@
   function. No need to take any input.
   <pre>Ans-  var Concatenate_Strings = (S1, S2) =&gt; 
     {
-      return S1.concat(S2) 
-    
-    let count = 0;
-      for(let i of S){
-        count+=1;
-      }
-      return count;
-    
-    
+      return S1.concat(S2);
     };</pre>
   <br>
   <h2>5- Find Length</h2>
@@ -124,9 +118,7 @@
   function. No need to take any input.
   <pre>Ans-  const joinStrings = (S, P) =&gt; 
     {
-        return S.concat(P) 
-    
-    return (str.split("").reverse().join(""))===str?"True":"False"
+        return S.concat(P);
     };</pre>
   <br>
   <h2>8- Plaindrome Check</h2>
@@ -137,7 +129,7 @@
   have to complete Plain_Check function. No need to take any input.
   <pre>Ans-  var Palin_Check = (str) =&gt;
     {
-         return (str.split("").reverse().join(""))===str?"True":"False"
+         return (str.split("").reverse().join(""))===str?"True":"False";
     }</pre>
   <br>
   <h2>9- Reverse the String</h2>
@@ -146,7 +138,7 @@
   Reverse_String function. No need to take any input.
   <pre>Ans-  var Reverse_String = (str) =&gt; 
     {
-         return str.split("").reverse().join("");  
+      return str.split("").reverse().join("");  
     };</pre>
   <br>
   <h2>10- Match the Strings</h2>
@@ -155,7 +147,7 @@
   function. No need to take any input.
   <pre>Ans-  var String_Match = (S1,S2) =&gt; 
     {
-          return((S1===S2?"YES":"NO"))
+      return((S1===S2?"YES":"NO"));
     };</pre>
   <br>
   <h2>11- String Replace</h2>
@@ -164,7 +156,7 @@
   have to complete Replace function. No need to take any input.
   <pre>Ans-  var Replace = (S, pattern , text) =&gt; 
     {
-          return S.replace(pattern,text) 
+      return S.replace(pattern,text);
     };</pre>
   <br>
   <h2>12- Split the String</h2>
@@ -173,9 +165,7 @@
   take any input.
   <pre>Ans-  var Split_the_string = (S) =&gt; 
     {
-      
-      return S.split(" ")
-    
+      return S.split(" ");
     };</pre>
   <br>
   <h2>13- Count the Vowels and Consonants</h2>
@@ -185,18 +175,14 @@
   Count_Consonants function. No need to take any input.
   <pre>Ans-  var Count_Vowels= (S) =&gt; 
     {
-           const vowels = S.match(/[aeiou]/gi); 
+      const vowels = S.match(/[aeiou]/gi); 
       return vowels.length;
     };
     var Count_Consonants= (S) =&gt; 
     {
-            const consonants = S.match(/[^aeiou]/gi);
-      return consonants.length
+      const consonants = S.match(/[^aeiou]/gi);
+      return consonants.length;
     };</pre>
-
-
-  </s.length;i++){>
   </pre>
 </body>
-
 </html>
