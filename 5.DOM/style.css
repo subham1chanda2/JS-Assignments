@@ -1,0 +1,16 @@
+.cards{
+    display: flex;
+    width: 500px;
+    height: 500px;
+    justify-content: space-between;
+    margin: 0px auto;
+  }
+  .card{
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+  }
+  #changeDirection{
+    margin: 20px auto;
+    display: block;
+  }
